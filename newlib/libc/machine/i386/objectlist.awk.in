@@ -1,0 +1,8 @@
+memchr.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/memchr.lo
+memcmp.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/memcmp.lo
+memcpy.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/memcpy.lo
+memmove.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/memmove.lo
+memset.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/memset.lo
+setjmp.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/setjmp.lo
+strchr.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/strchr.lo
+strlen.lo /home/guoqing/workspace/src/newlib/libc/machine/i386/strlen.lo

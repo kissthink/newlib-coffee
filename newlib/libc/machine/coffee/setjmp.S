@@ -1,0 +1,34 @@
+/*  setjmp and longjmp for COFFEE 32 */
+
+
+/* int setjmp (jmp_buf);  */
+	.globl	setjmp
+	.ent	setjmp
+setjmp:
+        stw $lr, 0($sp)
+        
+        stw $sp, 0($a0)
+        stw $fp, 4($a0)
+
+	lli	$v0,0
+	jmpr	$lr
+
+	.end	setjmp
+
+/* volatile void longjmp (jmp_buf, int);  */
+	.globl	longjmp
+	.ent	longjmp
+longjmp:
+	stw $lr, 0($sp)
+
+        stw $sp, 0($a0)
+        stw $fp, 4($a0)
+
+        cmpi    $c0, $a1, 0
+	bne	$c0, next
+	lli	$a1,1
+next:
+	mov	$v0,$a1
+	jmpr	$lr
+
+	.end longjmp

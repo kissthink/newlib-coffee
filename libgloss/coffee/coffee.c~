@@ -1,0 +1,47 @@
+
+int
+write ( int file,
+        char *buf,
+        int nbytes)
+{
+  return sysCall(SYS_write, file, (unsigned long)buf, nbytes);
+}
+
+int
+read (int file,
+      char *buf,
+      int nbytes)
+{
+  return sysCall(SYS_read, file, (unsigned long)buf, nbytes);
+}
+
+int
+outbyte (unsigned char c)
+{
+  return sysCall(SYS_write, 0, (unsigned long)&c, 1);
+}
+
+unsigned char
+inbyte (void)
+{
+  char c;
+  sysCall(SYS_read, 0, (unsigned long)&c, 1);
+  return c;
+}
+
+int sysCall(unsigned long func, unsigned long p1, unsigned long p2, unsigned long p3)
+{
+  int ret = 0;
+  asm volatile ( "              \n\
+          move $4, %1           \n\
+          move $5, %2           \n\
+          move $6, %3           \n\
+          move $7, %4           \n\
+          syscall               \n\
+          nop                   \n\
+          move %0, $2" : "=r"(ret) : "r"(func), "r"(p1), "r"(p2), "r"(p3));
+  return ret;
+}
+
+
+

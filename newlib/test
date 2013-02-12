@@ -1,0 +1,345 @@
+make "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-O2" "CCASFLAGS=-O2" "CFLAGS_FOR_BUILD=" "CFLAGS_FOR_TARGET=" "INSTALL=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=" "LIBCFLAGS_FOR_TARGET=" "MAKE=make" "MAKEINFO=/bin/bash /home/guoqing/workspace/src/missing --run makeinfo " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=`if test -f ./../expect/expect; then echo ./../expect/expect; else echo expect; fi`" "RUNTEST=`if test -f ./../dejagnu/runtest; then echo ./../dejagnu/runtest; else echo runtest; fi`" "RUNTESTFLAGS=" "exec_prefix=/opt/mips-elf" "infodir=/opt/mips-elf/share/info" "libdir=/opt/mips-elf/lib" "prefix=/opt/mips-elf" "tooldir=/opt/mips-elf/" "top_toollibdir=/opt/mips-elf//lib" "AR=ar" "AS=as" "CC=gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include" "LD=/usr/bin/ld" "LIBCFLAGS=" "NM=/usr/bin/nm -B" "PICFLAG=" "RANLIB=ranlib" "DESTDIR=" all-recursive
+make[1]: Entering directory `/home/guoqing/workspace/src/newlib'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-O2" "CCASFLAGS=-O2" "CFLAGS_FOR_BUILD=" "CFLAGS_FOR_TARGET=" "INSTALL=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=" "LIBCFLAGS_FOR_TARGET=" "MAKE=make" "MAKEINFO=/bin/bash /home/guoqing/workspace/src/missing --run makeinfo  " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/opt/mips-elf" "infodir=/opt/mips-elf/share/info" "libdir=/opt/mips-elf/lib" "prefix=/opt/mips-elf" "tooldir=/opt/mips-elf/" "top_toollibdir=/opt/mips-elf//lib" "AR=ar" "AS=as" "CC=gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include" "LD=/usr/bin/ld" "LIBCFLAGS=" "NM=/usr/bin/nm -B" "PICFLAG=" "RANLIB=ranlib" "DESTDIR=" DO=all multi-do # make
+Making all in libc
+make[2]: Entering directory `/home/guoqing/workspace/src/newlib/libc'
+Making all in argz
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/argz'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o argz_add.lo argz_add.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c argz_add.c  -fPIC -DPIC -o .libs/argz_add.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from /home/guoqing/workspace/src/newlib/libc/include/argz.h:10,
+                 from argz_add.c:7:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [argz_add.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/argz'
+Making all in stdlib
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/stdlib'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o __adjust.lo __adjust.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c __adjust.c  -fPIC -DPIC -o .libs/__adjust.o
+In file included from __adjust.c:5:0:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [__adjust.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/stdlib'
+Making all in ctype
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/ctype'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o ctype_.lo ctype_.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c ctype_.c  -fPIC -DPIC -o .libs/ctype_.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/ctype.h:4:0,
+                 from ctype_.c:38:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [ctype_.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/ctype'
+Making all in search
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/search'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o bsearch.lo bsearch.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c bsearch.c  -fPIC -DPIC -o .libs/bsearch.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/stdlib.h:11:0,
+                 from bsearch.c:64:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [bsearch.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/search'
+Making all in stdio
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/stdio'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o clearerr.lo clearerr.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c clearerr.c  -fPIC -DPIC -o .libs/clearerr.o
+In file included from clearerr.c:55:0:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [clearerr.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/stdio'
+Making all in stdio64
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/stdio64'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin     -I ./../stdio -O2 -c -o fgetpos64.lo fgetpos64.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -I ./../stdio -O2 -c fgetpos64.c  -fPIC -DPIC -o .libs/fgetpos64.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/stdio.h:29:0,
+                 from fgetpos64.c:53:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [fgetpos64.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/stdio64'
+Making all in string
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/string'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o bcopy.lo bcopy.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c bcopy.c  -fPIC -DPIC -o .libs/bcopy.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/string.h:10:0,
+                 from bcopy.c:29:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [bcopy.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/string'
+Making all in signal
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/signal'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o psignal.lo psignal.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c psignal.c  -fPIC -DPIC -o .libs/psignal.o
+In file included from psignal.c:38:0:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [psignal.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/signal'
+Making all in time
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/time'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o asctime.lo asctime.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c asctime.c  -fPIC -DPIC -o .libs/asctime.o
+In file included from /home/guoqing/workspace/src/newlib/targ-include/time.h:9:0,
+                 from asctime.c:50:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [asctime.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/time'
+Making all in locale
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/locale'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o locale.lo locale.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c locale.c  -fPIC -DPIC -o .libs/locale.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from locale.c:174:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [locale.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/locale'
+Making all in sys
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys'
+Making all in linux
+make[4]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux'
+Making all in machine
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/machine'
+Making all in i386
+make[6]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/machine/i386'
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin     -I./../.. -O2 -c -o get_clockfreq.lo get_clockfreq.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -I./../.. -O2 -c get_clockfreq.c  -fPIC -DPIC -o .libs/get_clockfreq.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/ctype.h:4:0,
+                 from get_clockfreq.c:20:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[6]: *** [get_clockfreq.lo] Error 1
+make[6]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/machine/i386'
+Making all in .
+make[6]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/machine'
+rm -f crt0.o
+ln i386/crt0.o crt0.o >/dev/null 2>/dev/null \
+	 || cp i386/crt0.o crt0.o
+cp: cannot stat `i386/crt0.o': No such file or directory
+make[6]: *** [crt0.o] Error 1
+make[6]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/machine'
+make[5]: *** [all-recursive] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/machine'
+Making all in argp
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/argp'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../include -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o argp-eexst.lo argp-eexst.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../include -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c argp-eexst.c  -fPIC -DPIC -o .libs/argp-eexst.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/stdio.h:29:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/argp.h:24,
+                 from argp-eexst.c:27:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[5]: *** [argp-eexst.lo] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/argp'
+Making all in cmath
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/cmath'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/cmath'
+Making all in linuxthreads
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads'
+Making all in machine
+make[6]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads/machine'
+Making all in i386
+make[7]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads/machine/i386'
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../../../include -I./../.. -I./../generic -I./../../.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin     -D_XOPEN_SOURCE=600 -D_GNU_SOURCE=1 -O2 -c -o pspinlock.lo pspinlock.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../../../include -I./../.. -I./../generic -I./../../.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -D_XOPEN_SOURCE=600 -D_GNU_SOURCE=1 -O2 -c pspinlock.c  -fPIC -DPIC -o .libs/pspinlock.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from pspinlock.c:20:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+In file included from ./../../internals.h:30:0,
+                 from pspinlock.c:22:
+./../../bits/libc-tsd.h:30:47: warning: ‘__nothrow__’ attribute ignored [-Wattributes]
+./../../bits/libc-tsd.h:32:12: warning: ‘__nothrow__’ attribute ignored [-Wattributes]
+make[7]: *** [pspinlock.lo] Error 1
+make[7]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads/machine/i386'
+Making all in .
+make[7]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads/machine'
+make[7]: Nothing to be done for `all-am'.
+make[7]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads/machine'
+make[6]: *** [all-recursive] Error 1
+make[6]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads/machine'
+Making all in .
+make[6]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads'
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../include -I./machine/i386 -I./machine/generic  -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin   -I./..   -D_XOPEN_SOURCE=600 -D_GNU_SOURCE=1 -O2 -c -o attr.lo attr.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../include -I./machine/i386 -I./machine/generic -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -I./.. -D_XOPEN_SOURCE=600 -D_GNU_SOURCE=1 -O2 -c attr.c  -fPIC -DPIC -o .libs/attr.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from attr.c:17:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+In file included from internals.h:30:0,
+                 from attr.c:23:
+./bits/libc-tsd.h:30:47: warning: ‘__nothrow__’ attribute ignored [-Wattributes]
+./bits/libc-tsd.h:32:12: warning: ‘__nothrow__’ attribute ignored [-Wattributes]
+attr.c: In function ‘__pthread_attr_init_2_1’:
+attr.c:28:3: warning: implicit declaration of function ‘__getpagesize’ [-Wimplicit-function-declaration]
+attr.c: In function ‘pthread_attr_setschedparam’:
+attr.c:82:3: warning: implicit declaration of function ‘__sched_get_priority_max’ [-Wimplicit-function-declaration]
+attr.c:83:3: warning: implicit declaration of function ‘__sched_get_priority_min’ [-Wimplicit-function-declaration]
+attr.c: In function ‘pthread_getattr_np’:
+attr.c:275:3: warning: implicit declaration of function ‘__sched_getscheduler’ [-Wimplicit-function-declaration]
+attr.c:279:3: warning: implicit declaration of function ‘__sched_getparam’ [-Wimplicit-function-declaration]
+make[6]: *** [attr.lo] Error 1
+make[6]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads'
+make[5]: *** [all-recursive] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/linuxthreads'
+Making all in net
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/net'
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../include -I./.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin     -DINET6 -O2 -c -o libnet_la-check_pf.lo `test -f 'check_pf.c' || echo './'`check_pf.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./../include -I./.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -DINET6 -O2 -c check_pf.c  -fPIC -DPIC -o .libs/libnet_la-check_pf.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from check_pf.c:20:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+In file included from check_pf.c:36:0:
+./../config.h:14:0: warning: "UINT32_C" redefined [enabled by default]
+/home/guoqing/workspace/src/newlib/targ-include/stdint.h:266:0: note: this is the location of the previous definition
+make[5]: *** [libnet_la-check_pf.lo] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/net'
+Making all in intl
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/intl'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin     -DNOT_IN_libc -DHAVE_CONFIG_H -D_GNU_SOURCE -D__libc_enable_secure=1 -D'LOCALEDIR="/usr/share/locale"' -D'LOCALE_ALIAS_PATH="/usr/share/locale"' -DNLSPATH='"/usr/share/locale/%L/%N:/usr/share/locale/%L/LC_MESSAGES/%N:/usr/share/locale/%l/%N:/usr/share/locale/%l/LC_MESSAGES/%N:"' -O2 -c -o catgets.lo catgets.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -DNOT_IN_libc -DHAVE_CONFIG_H -D_GNU_SOURCE -D__libc_enable_secure=1 -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DNLSPATH=\"/usr/share/locale/%L/%N:/usr/share/locale/%L/LC_MESSAGES/%N:/usr/share/locale/%l/%N:/usr/share/locale/%l/LC_MESSAGES/%N:\" -O2 -c catgets.c  -fPIC -DPIC -o .libs/catgets.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/alloca.h:10:0,
+                 from catgets.c:20:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+catgets.c: In function ‘catopen’:
+catgets.c:60:4: warning: implicit declaration of function ‘__stpcpy’ [-Wimplicit-function-declaration]
+catgets.c: In function ‘catclose’:
+catgets.c:128:5: warning: implicit declaration of function ‘__munmap’ [-Wimplicit-function-declaration]
+make[5]: *** [catgets.lo] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/intl'
+Making all in iconv
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/iconv'
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -DGCONV_DIR='"/opt/mips-elf/lib/newlib"' -DGCONV_PATH='"/opt/mips-elf/lib/newlib"' -I. -I./.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o libiconv_la-iconv_open.lo `test -f 'iconv_open.c' || echo './'`iconv_open.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -DGCONV_DIR=\"/opt/mips-elf/lib/newlib\" -DGCONV_PATH=\"/opt/mips-elf/lib/newlib\" -I. -I./.. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c iconv_open.c  -fPIC -DPIC -o .libs/libiconv_la-iconv_open.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from iconv_open.c:21:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+In file included from iconv_open.c:27:0:
+gconv_charset.h: In function ‘strip’:
+gconv_charset.h:36:7: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+gconv_charset.h:38:2: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+gconv_charset.h: In function ‘upstr’:
+gconv_charset.h:64:3: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+make[5]: *** [libiconv_la-iconv_open.lo] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/iconv'
+Making all in dl
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/dl'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -DSHARED -D_GNU_SOURCE -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin   -I./..   -D_GNU_SOURCE -D__strerror_r=strerror_r -O2 -c -o dl-deps.lo dl-deps.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -DSHARED -D_GNU_SOURCE -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -I./.. -D_GNU_SOURCE -D__strerror_r=strerror_r -O2 -c dl-deps.c  -fPIC -DPIC -o .libs/dl-deps.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/assert.h:9:0,
+                 from dl-deps.c:20:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+dl-deps.c: In function ‘_dl_map_object_deps’:
+dl-deps.c:273:11: warning: variable ‘err’ set but not used [-Wunused-but-set-variable]
+make[5]: *** [dl-deps.lo] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux/dl'
+Making all in .
+make[5]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys/linux'
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./include -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -I ./../../stdio -O2 -c -o callocr.lo callocr.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -I./include -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -I ./../../stdio -O2 -c callocr.c  -fPIC -DPIC -o .libs/callocr.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/stdlib.h:11:0,
+                 from callocr.c:1:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[5]: *** [callocr.lo] Error 1
+make[5]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux'
+make[4]: *** [all-recursive] Error 1
+make[4]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys/linux'
+Making all in .
+make[4]: Entering directory `/home/guoqing/workspace/src/newlib/libc/sys'
+rm -f crt0.o
+ln linux/crt0.o crt0.o >/dev/null 2>/dev/null \
+	 || cp linux/crt0.o crt0.o
+cp: cannot stat `linux/crt0.o': No such file or directory
+make[4]: *** [crt0.o] Error 1
+make[4]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys'
+make[3]: *** [all-recursive] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/sys'
+Making all in reent
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/reent'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o closer.lo closer.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c closer.c  -fPIC -DPIC -o .libs/closer.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/libc/include/reent.h:93,
+                 from closer.c:3:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [closer.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/reent'
+Making all in errno
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/errno'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o errno.lo errno.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c errno.c  -fPIC -DPIC -o .libs/errno.o
+In file included from /home/guoqing/workspace/src/newlib/libc/include/sys/reent.h:13:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/errno.h:11,
+                 from /home/guoqing/workspace/src/newlib/libc/include/errno.h:9,
+                 from errno.c:5:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [errno.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/errno'
+Making all in misc
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/misc'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o __dprintf.lo __dprintf.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c __dprintf.c  -fPIC -DPIC -o .libs/__dprintf.o
+In file included from __dprintf.c:7:0:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [__dprintf.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/misc'
+Making all in machine
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/machine'
+Making all in i386
+make[4]: Entering directory `/home/guoqing/workspace/src/newlib/libc/machine/i386'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/machine/i386'
+Making all in .
+make[4]: Entering directory `/home/guoqing/workspace/src/newlib/libc/machine'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/machine'
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/machine'
+Making all in unix
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/unix'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin      -O2 -c -o getcwd.lo getcwd.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -O2 -c getcwd.c  -fPIC -DPIC -o .libs/getcwd.o
+In file included from /home/guoqing/workspace/src/newlib/targ-include/sys/stat.h:10:0,
+                 from getcwd.c:35:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+In file included from /home/guoqing/workspace/src/newlib/targ-include/pthread.h:21:0,
+                 from /home/guoqing/workspace/src/newlib/targ-include/bits/libc-lock.h:24,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/lock.h:13,
+                 from /home/guoqing/workspace/src/newlib/targ-include/sys/dirent.h:13,
+                 from /home/guoqing/workspace/src/newlib/libc/include/dirent.h:6,
+                 from getcwd.c:37:
+/home/guoqing/workspace/src/newlib/targ-include/time.h:193:0: warning: "CLOCK_REALTIME" redefined [enabled by default]
+/usr/include/linux/time.h:55:0: note: this is the location of the previous definition
+/home/guoqing/workspace/src/newlib/targ-include/time.h:198:0: warning: "TIMER_ABSTIME" redefined [enabled by default]
+/usr/include/linux/time.h:77:0: note: this is the location of the previous definition
+/home/guoqing/workspace/src/newlib/targ-include/time.h:208:0: warning: "CLOCK_PROCESS_CPUTIME_ID" redefined [enabled by default]
+/usr/include/linux/time.h:57:0: note: this is the location of the previous definition
+/home/guoqing/workspace/src/newlib/targ-include/time.h:218:0: warning: "CLOCK_THREAD_CPUTIME_ID" redefined [enabled by default]
+/usr/include/linux/time.h:58:0: note: this is the location of the previous definition
+make[3]: *** [getcwd.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/unix'
+Making all in posix
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc/posix'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" -DPACKAGE_STRING=\"newlib\ 2.0.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin     -D_GNU_SOURCE -O2 -c -o _isatty.lo _isatty.c
+libtool: compile:  gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"2.0.0\" "-DPACKAGE_STRING=\"newlib 2.0.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -Wall -D_I386MACH_ALLOW_HW_INTERRUPTS -DHAVE_FCNTL -DHAVE_GETOPT -fPIC -D_I386MACH_NEED_SOTYPE_FUNCTION -DMISSING_SYSCALL_NAMES -fno-builtin -D_GNU_SOURCE -O2 -c _isatty.c  -fPIC -DPIC -o .libs/_isatty.o
+In file included from /home/guoqing/workspace/src/newlib/targ-include/sys/stat.h:10:0,
+                 from _isatty.c:5:
+/home/guoqing/workspace/src/newlib/libc/include/_ansi.h:134:19: error: missing binary operator before token "("
+make[3]: *** [_isatty.lo] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc/posix'
+Making all in .
+make[3]: Entering directory `/home/guoqing/workspace/src/newlib/libc'
+/bin/bash ./libtool --tag=CC   --mode=link gcc -I/home/guoqing/workspace/src/newlib/targ-include -I/home/guoqing/workspace/src/newlib/libc/include  -O2 -Xcompiler -nostdlib  -o libc.la   argz/libargz.la stdlib/libstdlib.la ctype/libctype.la search/libsearch.la stdio/libstdio.la stdio64/libstdio64.la  string/libstring.la signal/libsignal.la time/libtime.la locale/liblocale.la reent/libreent.la  errno/liberrno.la misc/libmisc.la unix/libunix.la posix/libposix.la  machine/i386/libi386.la sys/linux/liblinux.la 
+libtool: link: cannot find the library `argz/libargz.la' or unhandled argument `argz/libargz.la'
+make[3]: *** [libc.la] Error 1
+make[3]: Leaving directory `/home/guoqing/workspace/src/newlib/libc'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/home/guoqing/workspace/src/newlib/libc'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/home/guoqing/workspace/src/newlib'
+make: *** [all] Error 2
