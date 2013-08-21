@@ -2518,12 +2518,12 @@ crt0=crt0.o
 
 case "${target}" in
   coffee-*-*)
-	crt0="crt0.o"
+	crt0=
 	pcrt0=
 	part_specific_obj=
 	part_specific_defines=
-	script_list="coffee"
-	bsp_list="libcoffee.a"
+	script_list=
+	bsp_list="libcoffeebsp.a"
 	;;
 esac
 

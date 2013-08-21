@@ -66,10 +66,9 @@ OBJCOPY = `if [ -f ${objroot}/../binutils/objcopy ] ; \
 
 CRT0 = @crt0@
 PCRT0 = @pcrt0@
-GENOBJS = syscalls.o fstat.o getpid.o isatty.o kill.o \
-	lseek.o print.o putnum.o stat.o unlink.o
-GENOBJS2 = open.o close.o read.o write.o
-COFFEEOBJS = coffee.o @part_specific_obj@ ${GENOBJS} ${GENOBJS2}
+GENOBJS = syscalls.o linux-syscalls.o
+
+COFFEEOBJS = @part_specific_obj@ ${GENOBJS}
 
 CFLAGS = -g 
 
@@ -89,7 +88,7 @@ PART_SPECIFIC_DEFINES = @part_specific_defines@
 # it to link is a good test, so we ignore all the errors for now.
 #
 
-all: ${CRT0} ${PCRT0} test.o ${BSP}
+all: ${CRT0} ${PCRT0} ${BSP}
 
 #
 # here's where we build the board support packages for each target
@@ -97,7 +96,7 @@ all: ${CRT0} ${PCRT0} test.o ${BSP}
 coffeebsp.o: $(COFFEEOBJS)
 	${LD} -r $(COFFEEOBJS) -o $@
 
-libcoffee.a: $(COFFEEOBJS)
+libcoffeebsp.a: $(COFFEEOBJS)
 	${AR} ${ARFLAGS} $@ $(COFFEEOBJS)
 	${RANLIB} $@
 
